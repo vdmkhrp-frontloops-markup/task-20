@@ -1,15 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./src/style.scss">
-  <link rel="icon" href="./src/img/favicon.ico" sizes="32x32" />
-  <link rel="icon" href="./src/img/favicon.svg" type="image/svg+xml" />
-  <link rel="apple-touch-icon" href="./src/img/apple-touch-icon.png" />
-  <title>task-20</title>
-</head>
-<body>
-
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./src/style.scss" />
+    <link rel="icon" href="./src/img/favicon.ico" sizes="32x32" />
+    <link rel="icon" href="./src/img/favicon.svg" type="image/svg+xml" />
+    <link rel="apple-touch-icon" href="./src/img/apple-touch-icon.png" />
+    <title>task-20</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__top">
+          <div class="header__column">
+            <a href="#!" class="logo">
+              <img class="logo__img" src="./src/img/logo.png" alt="logo" />
+            </a>
+          </div>
+          <div class="header__column">
+            <form class="form">
+              <input type="text" placeholder="Search" class="form__input" />
+              <button type="button" class="form__btn">
+                <img src="./src/img/search.svg" alt="search" />
+              </button>
+            </form>
+          </div>
+          <div class="header__column">
+            <nav class="header__nav">
+              <a href="#!" class="header__link">Home</a>
+              <a href="#!" class="header__link">Profile</a>
+              <a href="#!" class="header__link">Connections</a>
+              <a href="#!" class="header__link">Interest</a>
+              <a href="#!" class="header__link"><span>Try Premium</span></a>
+            </nav>
+          </div>
+          <div class="header__column">
+            <nav class="header__action">
+              <button type="button" class="header__action-btn">
+                <img src="./src/img/message.svg" alt="chat" />
+              </button>
+              <button type="button" class="header__action-btn">
+                <img src="./src/img/bell.svg" alt="notification" />
+              </button>
+              <button type="button" class="header__action-btn">
+                <img src="./src/img/addUser.svg" alt="add User" />
+              </button>
+            </nav>
+          </div>
+          <div class="header__column">
+            <a href="#!" class="avatar avatar--40">
+              <img src="./src/img/avatar.webp" alt="" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="header__bottom">
+        <div class="container">
+          <nav class="header__navbar">
+            <a href="#!" class="header__navbar-link header__navbar-link--active"
+              >Posts</a
+            >
+            <a href="#!" class="header__navbar-link">Background</a>
+            <a href="#!" class="header__navbar-link">Recommendations</a>
+            <a href="#!" class="header__navbar-link">Following</a>
+          </nav>
+        </div>
+      </div>
+    </header>
+    <section class="main-section">
+      <div class="main-section__container container">
+        <div class="profile">
+          <div class="profile__user">
+            <div class="avatar avatar--100">
+              <img src="./src/img/bill-gates-avatar.png" alt="avatar" />
+            </div>
+            <h2 class="profile__name">Bill Gates</h2>
+            <h3 class="profile__job">Microsoft Founder</h3>
+            <p class="profile__text">greater seattle area</p>
+            <button type="button" class="profile__btn">Follow</button>
+            <button type="button" class="profile__btn profile__btn--inversion">Connect ></button>
+          </div>
+          <div class="profile__info">
+            <div class="profile__info-cell">
+              <h3 class="profile__info-title">200</h3>
+              <p class="profile__info-text">connections</p>
+            </div>
+            <div class="profile__info-cell">
+              <h3 class="profile__info-title">1.9M</h3>
+              <p class="profile__info-text">followers</p>
+            </div>
+          </div>
+          <div class="profile__links">
+            <a href="#!" class="profile__link">linkedin.com/in/billgates</a>
+            <a href="#!" class="profile__link">billgates.com</a>
+          </div>
+          <button type="button" class="profile__export-btn">
+            Export page as PDF
+          </button>
+        </div>
+        <div class="main-section__content">
+          <div class="posts">
+            <div class="posts__header">
+              <h5 class="posts__title">Posts</h5>
+              <div class="posts__btn-group">
+                <button type="button" class="posts__btn">L</button>
+                <button type="button" class="posts__btn">R</button>
+              </div>
+            </div>
+            <div class="posts__content">
+              <a href="#!" class="post">
+                <img
+                  class="post__img"
+                  src="./src/img/article1.webp"
+                  alt="image01"
+                />
+                <h6 class="post__title">3 Myths That Confuse Top-Managers</h6>
+                <p class="post__text">February 19, 2016</p>
+              </a>
+              <a href="#!" class="post">
+                <img
+                  class="post__img"
+                  src="./src/img/article2.webp"
+                  alt="image02"
+                />
+                <h6 class="post__title">How much do we spend on hot drinks</h6>
+                <p class="post__text">February 19, 2016</p>
+              </a>
+              <a href="#!" class="post">
+                <img
+                  class="post__img"
+                  src="./src/img/article3.webp"
+                  alt="image03"
+                />
+                <h6 class="post__title">Good news you might have noticed</h6>
+                <p class="post__text">February 19, 2016</p>
+              </a>
+            </div>
+          </div>
+          <div class="background">
+            <div class="background__header">
+              <h5 class="background__title">background</h5>
+            </div>
+          </div>
+        </div>
+        <aside class="sidebar">
+          <h6 class="sidebar__title">PEOPLE ALSO VIEWED</h6>
+          <div class="sidebar__cards">
+            <article class="people-card">
+              <div class="avatar">
+                <img src="./src/img/avatar.webp" alt="" />
+              </div>
+              <div class="people-card__content">
+                <h5 class="people-card__title">Sergey Brin</h5>
+                <p class="people-card__text">Google</p>
+              </div>
+            </article>
+            <article class="people-card">
+              <div class="avatar">
+                <img src="./src/img/avatar2.webp" alt="" />
+              </div>
+              <div class="people-card__content">
+                <h5 class="people-card__title">Jeffrey Bezos</h5>
+                <p class="people-card__text">Amazon</p>
+              </div>
+            </article>
+            <article class="people-card">
+              <div class="avatar">
+                <img src="./src/img/avatar3.webp" alt="avatar" />
+              </div>
+              <div class="people-card__content">
+                <h5 class="people-card__title">Steve Jobs</h5>
+                <p class="people-card__text">Apple</p>
+              </div>
+            </article>
+          </div>
+          <h6 class="sidebar__title">MORE INFLUENCERS</h6>
+        </aside>
+      </div>
+    </section>
+  </body>
 </html>
