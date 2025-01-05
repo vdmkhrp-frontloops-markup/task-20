@@ -249,8 +249,10 @@
               >Posts</a
             >
             <a href="#background" class="header__navbar-link">Background</a>
-            <a href="#!" class="header__navbar-link">Recommendations</a>
-            <a href="#!" class="header__navbar-link">Following</a>
+            <a href="#recomendations" class="header__navbar-link"
+              >Recommendations</a
+            >
+            <a href="#following" class="header__navbar-link">Following</a>
           </nav>
         </div>
       </div>
@@ -306,22 +308,22 @@
         </div>
         <div class="main-section__content">
           <div id="posts" class="posts main-block">
-            <div class="posts__header">
-              <h5 class="posts__title">Posts</h5>
-              <div class="posts__btn-group">
-                <button type="button" class="posts__btn">
+            <div class="main-block__header">
+              <h5 class="main-block__title">Posts</h5>
+              <div class="main-block__btn-group">
+                <button type="button" class="main-block__btn">
                   <svg class="icon icon--24">
                     <use href="#caret-left"></use>
                   </svg>
                 </button>
-                <button type="button" class="posts__btn">
+                <button type="button" class="main-block__btn">
                   <svg class="icon icon--24">
                     <use href="#caret-right"></use>
                   </svg>
                 </button>
               </div>
             </div>
-            <div class="posts__content">
+            <div class="main-block__content">
               <a href="#!" class="post">
                 <img
                   class="post__img"
@@ -358,8 +360,8 @@
             </div>
           </div>
           <div id="background" class="background main-block">
-            <div class="background__header">
-              <h5 class="background__title">background</h5>
+            <div class="main-block__header">
+              <h5 class="main-block__title background__title">background</h5>
             </div>
             <div class="background__cards">
               <article class="background__card">
@@ -387,39 +389,257 @@
                   </svg>
                   Experience
                 </h5>
-                <div class="background__card-info">
-                  <div class="background__card-company">
-                    <div class="background__card-info-text">
-                      <h6 class="background__card-details">2000 - PRESENT</h6>
-                      <h6 class="background__card-position">
-                        Co-founder, Chairman
-                      </h6>
-                    </div>
-                    <img
-                      class="background__card-img"
-                      src="./src/img/logo-microsoft.png"
-                      alt="logo"
-                    />
+                <div class="background__card-content">
+                  <div class="background__card-info">
+                    <p class="background__card-year">2000 - PRESENT</p>
+                    <h6 class="background__card-role">Co-founder, Chairman</h6>
+                    <a href="#!" class="background__card-link">Microsoft</a>
                   </div>
-                  <a href="#!" class="background__card-link">Microsoft</a>
-
-                  <div class="background__card-company">
-                    <div class="background__card-info-text">
-                      <h6 class="background__card-position">
-                        Senior Developer
-                      </h6>
-                      <h6 class="background__card-details">1992- 1999</h6>
-                    </div>
-                    <img
-                      class="background__card-img"
-                      src="./src/img/logo-youtube.png"
-                      alt="logo"
-                    />
+                  <img
+                    class="background__card-img"
+                    src="./src/img/logo-microsoft.png"
+                    alt="logo"
+                  />
+                </div>
+                <div class="background__card-content">
+                  <div class="background__card-info">
+                    <p class="background__card-year">1992- 1999</p>
+                    <h6 class="background__card-role">Senior Developer</h6>
+                    <a href="#!" class="background__card-link">Youtube</a>
                   </div>
-                  <a href="#!" class="background__card-link">Youtube</a>
+                  <img
+                    class="background__card-img"
+                    src="./src/img/logo-youtube.png"
+                    alt="logo"
+                  />
+                </div>
+              </article>
+              <article class="background__card">
+                <h5 class="background__card-title">
+                  <svg class="icon icon--22">
+                    <use href="#univer"></use>
+                  </svg>
+                  Education
+                </h5>
+                <div class="background__card-content">
+                  <div class="background__card-info">
+                    <p class="background__card-year">1973 - 1975</p>
+                    <h6 class="background__card-role">Harvard University</h6>
+                    <a href="#!" class="background__card-link"
+                      >BS Computer Science</a
+                    >
+                  </div>
+                </div>
+                <div class="background__card-content">
+                  <div class="background__card-info">
+                    <p class="background__card-year">1960- 1973</p>
+                    <h6 class="background__card-role">
+                      Lakeside School, Seattle
+                    </h6>
+                  </div>
+                </div>
+              </article>
+              <article class="background__card">
+                <h5 class="background__card-title">
+                  <svg class="icon icon--22">
+                    <use href="#bulb"></use>
+                  </svg>
+                  Skills
+                </h5>
+                <div class="background__card-skills">
+                  <div class="skill">
+                    <div class="skill__left">
+                      <div class="skill__circle">74</div>
+                      <h6 class="skill__title">Social Media Marketing</h6>
+                    </div>
+                    <div class="skill__right">
+                      <a href="#!" class="avatar avatar--40 skill__link">
+                        <img src="./src/img/avatar.webp" alt="avatar" />
+                      </a>
+                      <a href="#!" class="avatar avatar--40 skill__link">
+                        <img src="./src/img/avatar2.webp" alt="avatar" />
+                      </a>
+                      <a href="#!" class="avatar avatar--40 skill__link">
+                        <img src="./src/img/avatar3.webp" alt="avatar" />
+                      </a>
+                      <a href="#!" class="skill__right-circle skill__link">
+                        71+
+                      </a>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <div class="skill__left">
+                      <div class="skill__circle">67</div>
+                      <h6 class="skill__title">Web Development</h6>
+                    </div>
+                    <div class="skill__right">
+                      <a href="#!" class="avatar avatar--40 skill__link">
+                        <img src="./src/img/avatar2.webp" alt="avatar" />
+                      </a>
+                      <a href="#!" class="avatar avatar--40 skill__link">
+                        <img src="./src/img/avatar3.webp" alt="avatar" />
+                      </a>
+                      <a href="#!" class="avatar avatar--40 skill__link">
+                        <img src="./src/img/avatar.webp" alt="avatar" />
+                      </a>
+                      <a href="#!" class="skill__right-circle skill__link">
+                        17+
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </article>
+              <article class="background__card">
+                <h5 class="background__card-title">
+                  <svg class="icon icon--22">
+                    <use href="#star"></use>
+                  </svg>
+                  Interests
+                </h5>
+                <div class="background__card-interests">
+                  <span>Wireless Industry</span>
+                  <span>Photography</span>
+                  <span>Web design</span>
+                  <span>Technology</span>
                 </div>
               </article>
             </div>
+          </div>
+          <div id="recomendations" class="recomendations main-block">
+            <div class="main-block__header">
+              <h5 class="main-block__title">recomendations</h5>
+              <div class="main-block__btn-group">
+                <button type="button" class="main-block__btn">
+                  <svg class="icon icon--24">
+                    <use href="#caret-left"></use>
+                  </svg>
+                </button>
+                <button type="button" class="main-block__btn">
+                  <svg class="icon icon--24">
+                    <use href="#caret-right"></use>
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="main-block__content">
+              <article class="recomendation">
+                <p class="recomendation__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#!" class="people-card recomendation__link">
+                  <div class="avatar avatar--40">
+                    <img src="./src/img/avatar.webp" alt="avatar" />
+                  </div>
+                  <div class="people-card__content">
+                    <h5 class="people-card__title">Steve Jobs</h5>
+                    <p class="people-card__text">Apple</p>
+                  </div>
+                </a>
+              </article>
+              <article class="recomendation">
+                <p class="recomendation__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#!" class="people-card recomendation__link">
+                  <div class="avatar avatar--40">
+                    <img src="./src/img/avatar2.webp" alt="avatar" />
+                  </div>
+                  <div class="people-card__content">
+                    <h5 class="people-card__title">Mark Zuckerberg</h5>
+                    <p class="people-card__text">Facebook</p>
+                  </div>
+                </a>
+              </article>
+              <article class="recomendation">
+                <p class="recomendation__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                </p>
+                <a href="#!" class="people-card recomendation__link">
+                  <div class="avatar avatar--40">
+                    <img src="./src/img/avatar3.webp" alt="avatar" />
+                  </div>
+                  <div class="people-card__content">
+                    <h5 class="people-card__title">Jeffrey Bezos</h5>
+                    <p class="people-card__text">Amazon</p>
+                  </div>
+                </a>
+              </article>
+            </div>
+          </div>
+          <div id="following" class="following main-block">
+            <div class="main-block__header">
+              <h5 class="main-block__title">following</h5>
+            </div>
+            <div class="main-block__content following__content">
+              <div class="follow">
+                <div class="follow__top">
+                  <img
+                    class="follow__img"
+                    src="./src/img/logo-microsoft.png"
+                    alt="logo"
+                  />
+                </div>
+                <div class="follow__info">
+                  <h6 class="follow__title">Microsoft</h6>
+                  <a class="follow__link" href="#!">
+                    <span></span>
+                    Follow
+                  </a>
+                </div>
+              </div>
+              <div class="follow">
+                <div class="follow__top">
+                  <img
+                    class="follow__img"
+                    src="./src/img/logo-amazon.webp"
+                    alt="logo"
+                  />
+                </div>
+                <div class="follow__info">
+                  <h6 class="follow__title">Amazon</h6>
+                  <a class="follow__link" href="#!">
+                    <span></span>
+                    Follow
+                  </a>
+                </div>
+              </div>
+              <div class="follow">
+                <div class="follow__top">
+                  <img
+                    class="follow__img"
+                    src="./src/img/logo-microsoft.png"
+                    alt="logo"
+                  />
+                </div>
+                <div class="follow__info">
+                  <h6 class="follow__title">Microsoft</h6>
+                  <a class="follow__link" href="#!">
+                    <span></span>
+                    Follow
+                  </a>
+                </div>
+              </div>
+              <div class="follow">
+                <div class="follow__top">
+                  <img
+                    class="follow__img"
+                    src="./src/img/logo-amazon.webp"
+                    alt="logo"
+                  />
+                </div>
+                <div class="follow__info">
+                  <h6 class="follow__title">Amazon</h6>
+                  <a class="follow__link" href="#!">
+                    <span></span>
+                    Follow
+                  </a>
+                </div>
+              </div>
+            </div>
+            <button class="following__btn" type="button">See all (20)</button>
           </div>
         </div>
         <aside class="sidebar">
@@ -478,6 +698,8 @@
         </aside>
       </div>
     </section>
-    <script src="./src/script.js" type="module"></script>
+    <footer class="footer">
+      <p class="footer__text">LinkedIn Corporation © 2014</p>
+    </footer>
   </body>
 </html>
